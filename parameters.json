@@ -1,0 +1,48 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "networkInterfaceName": {
+            "value": "ac3task-vm-ni"
+        },
+        "networkSecurityGroupName": {
+            "value": "ac3task-vm-nsg"
+        },
+        "virtualNetworkName": {
+            "value": "ac3task-vnet"
+        },
+        "subnet1name": {
+            "value": "svnet1"
+        },
+        "subnet2name": {
+            "value": "svnet2"
+        },
+        "publicIpAddressName": {
+            "value": "ac3task-vm-ip"
+        },
+        "publicIpAddressType": {
+            "value": "Static"
+        },
+        "publicIpAddressSku": {
+            "value": "Standard"
+        },
+        "virtualMachineName": {
+            "value": "ac3task-vm"
+        },
+        "osDiskType": {
+            "value": "StandardSSD_LRS"
+        },
+        "virtualMachineSize": {
+            "value": "Standard_B1s"
+        },
+        "adminUsername": {
+            "value": "ac3taskadmin"
+        },
+        "adminPassword": {
+            "value": null
+        },
+        "zone": {
+            "value": "1"
+        }
+    }
+}
