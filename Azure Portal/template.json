@@ -57,6 +57,9 @@
                 "2",
                 "3"
             ]
+        },
+         "storageAccountName": {
+            "type": "string"
         }
     },
     "variables": {
@@ -226,7 +229,17 @@
             "zones": [
                 "[parameters('zone')]"
             ]
-        }
+        },
+        {
+            "name": "[parameters('storageAccountName')]",
+            "type": "Microsoft.Storage/storageAccounts",
+            "apiVersion": "2021-04-01",
+            "location": "[resourceGroup().location]",
+            "sku" : {
+                "name": "Standard_GRS"
+            },
+            "kind": "StorageV2"
+     }
     ],
     "outputs": {
         "adminUsername": {

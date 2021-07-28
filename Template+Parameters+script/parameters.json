@@ -35,14 +35,11 @@
         "virtualMachineSize": {
             "value": "Standard_B1s"
         },
-        "adminUsername": {
-            "value": "ac3taskadmin"
-        },
-        "adminPassword": {
-            "value": "ac3task@12345"
-        },
         "zone": {
             "value": "1"
+        },
+        "storageAccountName": {
+            "value": "ac3tasksa"
         }
     }
 }
